@@ -7,7 +7,7 @@ class FormRow extends Component {
     constructor(pops) {
         super(pops);
 
-        // Estados
+        // Estados (inputValue) para obtener el valor desde el padre
         this.state = {
             inputValue: ''
         }
@@ -33,9 +33,10 @@ class FormRow extends Component {
             <div>
                 <label>{ this.props.labelText }</label>
                 <input
-                    type= { this.props.inputType }
-                    value= {this.state.inputValue}
-                    onChange= {this.onChange}/>
+                    type     = {this.props.inputType}
+                    value    = {this.state.inputValue}
+                    onChange = {this.onChange}
+                    required = {this.props.isRequired}/>
             </div>
         );
     }
@@ -43,8 +44,9 @@ class FormRow extends Component {
 
 // Propiedades del componente
 FormRow.propTypes = {
-    inputType: PropTypes.string,
-    labelText: PropTypes.string
+    inputType : PropTypes.string,
+    labelText : PropTypes.string,
+    isRequired: PropTypes.bool
 }
 
 export default FormRow;
