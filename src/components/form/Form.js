@@ -9,9 +9,26 @@ class Form extends Component {
         return(
             <div>
                 <h2>Registro</h2>
-                <FormRow/>
-                <FormRow/>
-                <FormRow/>
+                <FormRow
+                    inputType="Text"
+                    labelText="Nombre"
+                />
+                <FormRow
+                    inputType="Text"
+                    labelText="Apellidos"
+                />
+                <FormRow
+                    inputType="email"
+                    labelText="Correo Electronico"
+                />
+                <FormRow
+                    inputType="password"
+                    labelText="Password"
+                />
+                <FormRow
+                    inputType="password"
+                    labelText="Confirmar Password"
+                />
             </div>
         );
     }
