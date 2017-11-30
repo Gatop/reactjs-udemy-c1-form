@@ -30,13 +30,14 @@ class FormRow extends Component {
     // Metodo render
     render(){
         return(
-            <div>
-                <label>{ this.props.labelText }</label>
+            <div className="FormRow">
+                <label className="FormRow-label">{ this.props.labelText }</label>
                 <input
-                    type     = {this.props.inputType}
-                    value    = {this.state.inputValue}
-                    onChange = {this.onChange}
-                    required = {this.props.isRequired}/>
+                    className = "FormRow-input"
+                    type      = {this.props.inputType}
+                    value     = {this.state.inputValue}
+                    onChange  = {this.onChange}
+                    required  = {this.props.isRequired}/>
             </div>
         );
     }

@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Philosopher');
+
+.Form {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #212121;
+}
+
+.Form-form {
+    width: 350px;
+    background-color: #FFF;
+    border-radius: 5px;
+    padding: 12px 18px 12px 18px;
+}
+
+.Form-title {
+    font-size: 2em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.Form-button {
+    background-color: #FFF;
+    border: 1px solid #000;
+    border-radius: 5px;
+    font-family: 'Philosopher', sans-serif;
+    cursor: pointer;
+    font-size: 0.9em;
+    padding: 4px 16px 4px 16px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.FormRow {
+    display: flex;
+    flex-flow: column;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.FormRow-label {
+    font-family: 'Philosopher', sans-serif;
+}
+
+.FormRow-input {
+    font-family: 'Philosopher', sans-serif;
+    font-size: 1em;
+}
+
+.Form-label-legend {
+    color: #444ACA;
+}

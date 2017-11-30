@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './Form.css';
 
 // Import de componentes
 import FormRow from './FormRow.js'
@@ -43,9 +44,9 @@ class Form extends Component {
     // Metodo render
     render(){
         return(
-            <div>
-                <h2>Registro</h2>
-                <form onSubmit = {this.onSubmit}>
+            <div className="Form">
+                <form className="Form-form" onSubmit = {this.onSubmit}>
+                    <h2 className="Form-title">Registro</h2>
                     <FormRow
                         inputType  = "Text"
                         labelText  = "Nombre"
@@ -76,8 +77,8 @@ class Form extends Component {
                         isRequired = {true}
                         ref        = "confirm_password"
                     />
-                    <button>Registro</button>
-                    <label>{this.state.labelLegend}</label>
+                    <button className="Form-button">Registro</button>
+                    <label className="Form-label-legend">{this.state.labelLegend}</label>
                 </form>
             </div>
         );
